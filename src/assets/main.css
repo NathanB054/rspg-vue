@@ -1,0 +1,25 @@
+@import './base.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+#app {
+ 
+}
+
+a,
+.green {
+ 
+}
+
+@media (hover: hover) {
+ 
+}
+
+@media (min-width: 1024px) {
+ 
+}
+  #app {
+ 
+}
