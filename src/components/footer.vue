@@ -2,7 +2,7 @@
    <footer>
         <div class="detail">
             <div>
-                <NuxtLink to="/"><img width="100px" height="auto" src="../assets/img/logomfu.png"></NuxtLink>
+               <router-link to="/"> <img width="100px" height="auto" src="../assets/img/logomfu.png"></router-link>
             </div>
 
             <div>
@@ -80,9 +80,38 @@ footer {
     font-size: 15px;
 
 }
+
 .detail div {
  margin: 10px 40px 10px 0;
 }
 
+
+
+
+
+
+@media (max-width: 1041px) {
+    .detail{
+        margin-left: 25px;
+    }
+  p{
+    font-size: 10px;
+    text-align: center;
+  }
+  li{
+    font-size: 10px;
+    text-align: center;
+  }  
+
+}
+
+
+@media (max-width: 805px) {
+    .detail{
+        display: grid;
+        place-items: center;
+    }
+    
+}
 
 </style>

@@ -2,7 +2,7 @@
     <nav class="header flex ">
         <!-- Logo -->
         <div>
-            <NuxtLink to="/"><img width="100px" height="auto" src="../assets/img/logomfu.png"></NuxtLink>
+            <router-link to="/"> <img width="100px" height="auto" src="../assets/img/logomfu.png"></router-link>
         </div>
 
         <!-- Text -->
