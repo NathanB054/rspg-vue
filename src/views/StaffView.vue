@@ -1,24 +1,24 @@
 <template>
-<div class="staff">
+  <div class="staff">
     <form class="login">
-  <input type="text" placeholder="Username">
-  <input type="password" placeholder="Password">
-  <button>Login</button>
-</form>
+      <input type="text" placeholder="Username">
+      <input type="password" placeholder="Password">
+      <button>Login</button>
+    </form>
 
-</div>
+  </div>
 
 </template>
 
 <script>
-    export default {
-        
-    }
+export default {
+
+}
 </script>
 
 <style scoped>
-.staff{
-    height: 65vh;
+.staff {
+  height: 65vh;
 }
 
 .login {
@@ -40,7 +40,9 @@
   transition: transform 300ms, box-shadow 300ms;
   box-shadow: 5px 10px 10px rgba(2, 128, 144, 0.2);
 }
-.login::before, .login::after {
+
+.login::before,
+.login::after {
   content: "";
   position: absolute;
   width: 600px;
@@ -51,6 +53,7 @@
   border-bottom-right-radius: 40%;
   z-index: -1;
 }
+
 .login::before {
   left: 40%;
   bottom: -130%;
@@ -59,6 +62,7 @@
   -moz-animation: wawes 6s infinite linear;
   animation: wawes 6s infinite linear;
 }
+
 .login::after {
   left: 35%;
   bottom: -125%;
@@ -67,7 +71,8 @@
   -moz-animation: wawes 7s infinite;
   animation: wawes 7s infinite;
 }
-.login > input {
+
+.login>input {
   font-family: "Asap", sans-serif;
   display: block;
   border-radius: 5px;
@@ -78,7 +83,8 @@
   padding: 10px 10px;
   margin: 15px -10px;
 }
-.login > button {
+
+.login>button {
   font-family: "Asap", sans-serif;
   cursor: pointer;
   color: #fff;
@@ -95,7 +101,8 @@
   -moz-transition: background-color 300ms;
   transition: background-color 300ms;
 }
-.login > button:hover {
+
+.login>button:hover {
   background-color: #f24353;
 }
 
@@ -103,18 +110,22 @@
   from {
     -webkit-transform: rotate(0);
   }
+
   to {
     -webkit-transform: rotate(360deg);
   }
 }
+
 @-moz-keyframes wawes {
   from {
     -moz-transform: rotate(0);
   }
+
   to {
     -moz-transform: rotate(360deg);
   }
 }
+
 @keyframes wawes {
   from {
     -webkit-transform: rotate(0);
@@ -123,6 +134,7 @@
     -o-transform: rotate(0);
     transform: rotate(0);
   }
+
   to {
     -webkit-transform: rotate(360deg);
     -moz-transform: rotate(360deg);
@@ -131,6 +143,7 @@
     transform: rotate(360deg);
   }
 }
+
 a {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.6);

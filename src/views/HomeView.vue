@@ -113,10 +113,10 @@ export default {
     border-radius: 30%;
     height: 12em;
     width: 15em;
-    margin: 30px;
     overflow: hidden;
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.1); /* Subtle drop shadow */
   transition: transform 0.2s ease-in-out;
+  margin: 20px;
 }
 .image-orgz:hover{
     transform: scale(1.3); /* Subtle zoom */
@@ -126,6 +126,7 @@ export default {
 
 .category {
     justify-content: center;
+    margin: auto;
 }
 .words{
     margin-bottom: 2%;
