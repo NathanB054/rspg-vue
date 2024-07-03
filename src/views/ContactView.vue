@@ -1,4 +1,10 @@
+<script setup>
+import Header from '../../src/components/header.vue'
+import Footer from '../../src/components/footer.vue'
+</script>
+
 <template>
+  <Header/>
   <div class="contacts testbox">
       <form action="/">
         <h2 class="cont">ติดต่อเรา</h2>
@@ -24,6 +30,7 @@
         </div>
       </form>
     </div>
+    <Footer/>
 </template>
 
 <script>

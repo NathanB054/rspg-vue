@@ -1,4 +1,12 @@
+<script setup>
+import Header from '../../components/header.vue'
+import Footer from '../../components/footer.vue'
+</script>
+
+
+
 <template>
+    <Header />
     <div class="center">
         <div v-if="isLoading" class="spinner-container">
         <div class="spinner"></div>
@@ -39,6 +47,7 @@
         </div>
     </div>
     </div>
+    <Footer />
 </template>
 
 <script>

@@ -1,13 +1,18 @@
+<script setup>
+import Header from '../../src/components/header.vue'
+import Footer from '../../src/components/footer.vue'
+</script>
+
 <template>
+  <Header />
   <div class="staff">
     <form class="login">
       <input type="text" placeholder="Username">
       <input type="password" placeholder="Password">
       <button>Login</button>
     </form>
-
   </div>
-
+  <Footer />
 </template>
 
 <script>

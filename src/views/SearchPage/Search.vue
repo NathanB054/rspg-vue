@@ -1,4 +1,11 @@
+<script setup>
+import Header from '../../components/header.vue'
+import Footer from '../../components/footer.vue'
+</script>
+
+
 <template>
+    <Header />
   <div class="center">
     <div class="content">
       <div v-if="isLoading" class="spinner-container">
@@ -31,44 +38,9 @@
           </tr>
         </tbody>
       </table>
-      <!-- <table  class="table-clickable">
-        <thead>
-            <h1>ผลลัพธ์ทั้งหมด {{ plants.length }}</h1>
-          <tr>
-            <th>ID</th>
-            <th>Name</th>
-            <th>Avatar</th>
-            <th>City</th>
-          </tr>
-         
-        </thead>
-        <tbody>
-          <tr v-for="plant in plants">
-            <td>
-              <router-link :to="{ name: 'searchDetail', params: { id: plant.id } }" class="a">
-                {{ plant.id }}
-              </router-link>
-            </td>
-            <td>
-              <router-link :to="{ name: 'searchDetail', params: { id: plant.id } }" class="a">
-                {{ plant.plant_name }}
-              </router-link>
-            </td>
-            <td>
-              <router-link :to="{ name: 'searchDetail', params: { id: plant.id } }" class="a">
-                {{ plant.avatar }}
-              </router-link>
-            </td>
-            <td>
-              <router-link :to="{ name: 'searchDetail', params: { id: plant.id } }" class="a">
-                {{ plant.City }}
-              </router-link>
-            </td>
-          </tr>
-        </tbody>
-      </table> -->
     </div>
   </div>
+  <Footer />
 </template>
 
 <script>

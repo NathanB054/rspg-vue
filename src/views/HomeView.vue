@@ -1,9 +1,12 @@
 <script setup>
-
+import Header from '../../src/components/header.vue'
+import Footer from '../../src/components/footer.vue'
 
 </script>
 
+
 <template>
+    <Header />
   <div class="home">
         <h1 class="title" id="title">สืบค้นข้อมูลพืชภูมิปัญญา</h1>
 
@@ -55,7 +58,7 @@
 
     </div>
 
-
+  <Footer />
 </template>
 
 <script>
